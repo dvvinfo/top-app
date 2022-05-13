@@ -1,4 +1,5 @@
-import { HtagProps } from "./HTag.props";
+
+import { HtagProps } from './Htag.props';
 import styles from './Htage.module.css';
 
 
