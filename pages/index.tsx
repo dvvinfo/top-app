@@ -4,6 +4,7 @@ import Htag from "../components/HTag/Htag";
 import P from "../components/P/P";
 import Rating from "../components/Rating/Rating";
 import Tag from "../components/Tag/Tag";
+import { Layout } from "../layout/Layout";
 
 
 export default function Home():JSX.Element  {
@@ -11,7 +12,7 @@ export default function Home():JSX.Element  {
   const [rating, setRating] = useState<number>(4);
 
   return (
-    <>
+    <Layout>
       <Htag tag ='h1'>{counter}</Htag>
       <Button appearance='primary'
        onClick={() => setCounter(x => x + 1)}>кнопка</Button>
@@ -25,6 +26,6 @@ export default function Home():JSX.Element  {
       <Tag size="m" color="primary">primary</Tag>
       <Rating rating={rating} isEditable setRating={setRating}/>
 
-    </>
+    </Layout>
   )
 }
