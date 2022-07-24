@@ -1,4 +1,4 @@
-import { GetStaticPaths, GetStaticPathsContext, GetStaticProps, GetStaticPropsContext } from "next";
+import { GetStaticPaths, GetStaticProps, GetStaticPropsContext } from "next";
 import axios from "axios";
 import { withLayout } from "../../layout/Layout";
 import { MenuItem } from "../../interfaces/menu.interface";
